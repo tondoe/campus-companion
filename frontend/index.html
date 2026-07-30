@@ -1,41 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campus Companion</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Add fonts-->
 </head>
-    <body>
-        <header>
-            <h1>Campus Companion</h1>
-            <p>Your personal student dashboard.</p>
-        </header>
 
+<body>
+    <header>
+        <h1>Campus Companion</h1>
+        <p>Your personal student dashboard.</p>
+    </header>
+
+    <div class="page-layout">
         <nav>
             <ul>
                 <li><a href="#">Dashboard</a></li>
                 <li><a href="#">Courses</a></li>
                 <li><a href="#">Assignments</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Grades</a></li>
+                <li><a href="#">Notifications</a></li>
                 <li><a href="#">Settings</a></li>
             </ul>
         </nav>
 
         <main>
-            <section>
-                <h3>Upcoming Assignments</h3>
-                <p>No assignments yet.</p>
-            </section>
-            
-            <section>
-                <h3>My courses</h3>
-                <p>No courses yet.</p>
-            </section>
-        
-        </main>   
+            <div class="class-assignments">
+                <section class="section1">
+                    <h2>Upcoming Assignments</h2>
+                    <p>No assignments yet.</p>
+                </section>
+            </div>
+            <div class="class-courses">
+                <section class="section2">
+                    <h2>My Courses</h2>
+                    <p>No courses yet.</p>
+                </section>
+            </div>
+        </main>
 
-        <footer>
-            <p>Campus Companion © 2026</p>
-        </footer>
+    </div>
 
-    </body>
+
+
+    <footer>
+        <p>Campus Companion © 2026</p>
+    </footer>
+
+</body>
+
 </html>
