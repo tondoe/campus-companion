@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    background-color: #e5f7f7;
 }
 
 h1,
@@ -21,12 +20,6 @@ p {
     width: 100%;
 }
 
-nav a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
 nav img {
     width: 24px;
     height: 24px;
@@ -35,8 +28,8 @@ nav img {
 }
 
 img[alt="Courses"],
-[alt="Assignments"], 
-[alt="Calendar"] {
+img[alt="Assignments"], 
+img[alt="Calendar"] {
     width: 40px;
     height: auto;
 }
@@ -45,16 +38,17 @@ img[alt="Courses"],
 header h1 {
     font-size: 30px;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin: 0 0 5px;
 }
 
-h1 + h1 {
-    margin-top: 5px;
+header h1 span {
+    display: block;
 }
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #e5f7f7;
 }
 
 header {
@@ -84,9 +78,11 @@ ul {
 }
 
 li a {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: black;
-    padding: 4px 4px;
+    padding: 4px;
     text-decoration: none;
 }
 
@@ -97,19 +93,34 @@ li a:hover {
 
 main {
     display: flex;
+    flex-direction: column;
+    flex: 1;
     gap: 20px;
     padding: 20px;
+    min-width: 0;
 }
 
-.class-assignments,
-.class-courses {
+.top-row,
+.bottom-row {
+    display: flex;
+    gap: 20px;
+}
+
+.dashboard-assignments,
+.dashboard-courses,
+.dashboard-schedule,
+.dashboard-grades,
+.dashboard-notifications {
     flex: 1;
     min-width: 0;
     display: flex;
 }
 
 .section1,
-.section2 {
+.section2,
+.section3,
+.section4,
+.section5 {
     flex: 1;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -120,13 +131,4 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.page-layout {
-    display: flex;
-}
-
-main {
-    display: flex;
-    flex: 1;
 }
